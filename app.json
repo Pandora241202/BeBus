@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "BeBus",
+    "slug": "bebus",
+    "version": "1.0.0",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "config": {
+        "googleMaps": {"apiKey": "AIzaSyDNI_ZWPqvdS6r6gPVO50I4TlYkfkZdXh8"}
+      },
+      "package": "com.pandora241202.bebus"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "owner": "pandora241202",
+    "extra": {
+      "eas": {
+        "projectId": "e99ff8f4-ab08-4628-b3f7-9231cf80f557"
+      }
+    }
+  }
+}
