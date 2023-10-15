@@ -1,12 +1,6 @@
 import React from "react";
 import MapView, { Marker, PROVIDER_GOOGLE, Polyline } from "react-native-maps";
-import {
-  StyleSheet,
-  View,
-  Image,
-  Text,
-  TouchableOpacity,
-} from "react-native";
+import { StyleSheet, View, Image, Text, TouchableOpacity } from "react-native";
 import { useEffect, useState } from "react";
 import * as Location from "expo-location";
 import RequestConfirmModal from "../SOS/RequestConfirmModal";
@@ -140,78 +134,12 @@ export default function MapDisplay(props) {
           {props.route && (
             <Marker coordinate={props.route[props.route.length - 1]} />
           )}
-          {/* {requestMsg && (
-            <View
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <Modal
-                animationType="fade"
-                transparent={true}
-                visible={requestMsg}
-                onRequestClose={() => {
-                  Alert.alert("Modal has been closed.");
-                  setRequestMsg(!requestMsg);
-                }}
-              >
-                <View style={styles.centeredView}>
-                  <View style={styles.modalView}>
-                    <View>
-                      <Text
-                        style={{
-                          fontSize: 22,
-                          fontFamily: "PoppinsRegular",
-                          textAlign: "center",
-                        }}
-                      >
-                        Yêu cầu tài xế ghé trạm?
-                      </Text>
-                    </View>
-                    <View style={{ flexDirection: "row" }}>
-                      <TouchableOpacity
-                        onPress={() => setRequestMsg(!requestMsg)}
-                        style={{
-                          width: "40%",
-                          height: 40,
-                          backgroundColor: "#F39500",
-                          borderRadius: 5,
-                        }}
-                      >
-                        <Text
-                          style={{ fontSize: 14, fontFamily: "PoppinsRegular" }}
-                        >
-                          Xác nhận
-                        </Text>
-                      </TouchableOpacity>
-                      <TouchableOpacity
-                        style={{ width: "40%", height: 40 }}
-                        onPress={() => {
-                          setRequestMsg(!requestMsg);
-                        }}
-                      >
-                        <Text
-                          style={{
-                            fontSize: 14,
-                            fontFamily: "PoppinsRegular",
-                            textAlign: "center",
-                          }}
-                        >
-                          Hủy
-                        </Text>
-                      </TouchableOpacity>
-                    </View>
-                  </View>
-                </View>
-              </Modal>
-            </View>
-          )} */}
         </MapView>
       )}
-      <RequestConfirmModal setRequestMsg = {setRequestMsg} requestMsg = {requestMsg}/>
+      <RequestConfirmModal
+        setRequestMsg={setRequestMsg}
+        requestMsg={requestMsg}
+      />
     </View>
   );
 }
