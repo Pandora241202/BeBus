@@ -13,7 +13,7 @@ const RequestConfirmModal = (props) => {
             <View style={{backgroundColor: 'rgba(0,0,0,0.6)', flex: 1, justifyContent: 'center', alignItems: 'center'}}>
                 <View style={{backgroundColor: '#FFF4DF', width: '90%', borderRadius: 15, alignItems: 'center', paddingHorizontal: '5%', paddingVertical: 12}}>
                     <Text style={{fontFamily: 'PoppinsRegular', fontSize: 20, includeFontPadding: false, width: '100%', textAlign: 'center'}}>Yêu cầu tài xế ghé trạm?</Text>
-                    <View style={{flexDirection: 'row', width: '100%', marginTop: 15, padding: 10}}>
+                    <View style={{flexDirection: 'row', width: '100%', marginTop: 15, paddingVertical: 10, paddingHorizontal: 40, alignItems: 'center', justifyContent: 'space-between'}}>
                         <TouchableOpacity 
                             style={{ alignItems: 'center', justifyContent: 'center', width: 100, height: 35, alignSelf: 'center', marginTop: 10, backgroundColor: "#F39500"}}
                             onPress={() => props.setRequestMsg(false)}
