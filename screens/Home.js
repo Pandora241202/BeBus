@@ -62,7 +62,7 @@ const Home = ({navigation}) => {
                 {features.map((feature, index) => 
                     <View key={index} style={{alignItems: 'center'}}>
                         <TouchableOpacity style={{width: 60, height: 60, borderRadius: 100, backgroundColor: '#FFD180', alignItems: 'center', justifyContent: 'center'}}
-                            onPress={() => onPress(feature.screen, feature.name)}
+                            onPress={() => onPress(null, feature.name)}
                         >
                             {feature.icon}
                         </TouchableOpacity>

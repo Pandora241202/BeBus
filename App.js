@@ -7,15 +7,10 @@ import Login from "./screens/Login";
 import Register from "./screens/Register";
 import { useFonts } from "expo-font";
 import Home from "./screens/Home";
-import Notification from "./screens/Notification";
-import Heart from "./screens/Heart";
-import Booking from "./screens/Booking";
 import FindRoute from "./screens/FindRoute";
 import StartRoute from "./screens/StartRoute";
 import { Provider } from "react-redux";
-import Support from "./screens/Support";
 import LookUp from "./components/Lookup/Lookup";
-import Settings from "./screens/Settings";
 import store from "./redux/store";
 import Schedule from "./screens/Schedule";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -73,24 +68,6 @@ export default function App() {
               }}
             />
             <Stack.Screen
-              name="Notification"
-              component={Notification}
-              options={{
-                presentation: "modal",
-                animation: "slide_from_right",
-                animationTypeForReplace: "push",
-              }}
-            />
-            <Stack.Screen
-              name="Heart"
-              component={Heart}
-              options={{
-                presentation: "modal",
-                animation: "slide_from_right",
-                animationTypeForReplace: "push",
-              }}
-            />
-            <Stack.Screen
               name="FindRoute"
               component={FindRoute}
               options={{
@@ -109,35 +86,8 @@ export default function App() {
               }}
             />
             <Stack.Screen
-              name="Support"
-              component={Support}
-              options={{
-                presentation: "modal",
-                animation: "slide_from_right",
-                animationTypeForReplace: "push",
-              }}
-            />
-            <Stack.Screen
-              name="Booking"
-              component={Booking}
-              options={{
-                presentation: "modal",
-                animation: "slide_from_right",
-                animationTypeForReplace: "push",
-              }}
-            />
-            <Stack.Screen
               name="LookUp"
               component={LookUp}
-              options={{
-                presentation: "modal",
-                animation: "slide_from_right",
-                animationTypeForReplace: "push",
-              }}
-            />
-            <Stack.Screen
-              name="Settings"
-              component={Settings}
               options={{
                 presentation: "modal",
                 animation: "slide_from_right",

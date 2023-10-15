@@ -13,11 +13,11 @@ export default function ToolBar({itemEnable}) {
 
   return (        
     <View style={styles.toolbar}>
-      <ToolBarItem type='bell' name='bell-o' disable={itemEnable === 'Notification'} onPress={() => onPressItemHandler('Notification')}/>
+      <ToolBarItem type='bell' name='bell-o' disable={itemEnable === 'Notification'} onPress={() => onPressItemHandler('Home')}/>
       <ToolBarItem type='calendar' name='calendar' disable={itemEnable === 'Calendar'} onPress={() => onPressItemHandler('Schedule')}/>
       <ToolBarItem type='home' name='home' disable={itemEnable === 'Home'} onPress={() => onPressItemHandler('Home')}/>
-      <ToolBarItem type='heart' name='heart-o' disable={itemEnable === 'Heart'} onPress={() => onPressItemHandler('Heart')}/>
-      <ToolBarItem type='user' name='user-circle' disable={itemEnable === 'Settings'} onPress={() => onPressItemHandler('Settings')}/>
+      <ToolBarItem type='heart' name='heart-o' disable={itemEnable === 'Heart'} onPress={() => onPressItemHandler('Home')}/>
+      <ToolBarItem type='user' name='user-circle' disable={itemEnable === 'Settings'} onPress={() => onPressItemHandler('Home')}/>
     </View>
   )
 };
